@@ -17,12 +17,20 @@ Output:-
 I am walking
 I am flying
 */
+class Bird: public Animal{
+	public:
+	void fly(){
+		cout<<"I am flying"<<endl;
+	}
+};
 
-
-//code your solution here(You may increase the space and work efficiently and properly)
-
-
-
+int main() {
+	Bird bird;
+	bird.walk();
+	bird.fly();
+	
+	return 0;
+}
 
 /*
 2. When a subclass inherits from a superclass, it will also inherits its methods however, it can 
