@@ -21,7 +21,35 @@ I am flying
 
 //code your solution here(You may increase the space and work efficiently and properly)
 
+#include <iostream>
+using namespace std;
 
+class Animal
+{
+public:
+    void walk()
+    {
+        cout << "I am walking" << endl;
+    }
+};
+
+class Bird : public Animal
+{
+public:
+    void fly()
+    {
+        cout << "I am flying" << endl;
+    }
+};
+
+int main()
+{
+    Bird bird;
+    bird.walk();
+    bird.fly();
+
+    return 0;
+}
 
 
 /*
@@ -43,4 +71,36 @@ class Sports
 };
 */
 
+#include <iostream>
+using namespace std;
 
+class Sports
+{
+public:
+    string getname()
+    {
+        return "all sports";
+    }
+
+    void getTeamMembers()
+    {
+        cout << "Each team has n players in " + getname() << endl;
+    }
+};
+
+class Football : public Sports
+{
+public:
+    string getname()
+    {
+        return "football";
+    }
+};
+
+int main()
+{
+    Football football;
+    football.getTeamMembers();
+
+    return 0;
+}
