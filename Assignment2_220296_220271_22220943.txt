@@ -1,0 +1,63 @@
+Question 1
+#include <iostream>
+
+class Animal
+{
+    public:
+    void walk()
+    {
+        std::cout<<"I am walking"<<std::endl;
+    }
+};
+
+class Bird: public Animal
+{
+    public:
+    void fly()
+    {
+       std::cout<<"I am flying"<<std::endl;
+    }
+};
+int main()
+{
+    Bird bird;
+    bird.walk();
+    bird.fly();
+    return 0;
+}
+
+
+Question 2
+#include <iostream>
+
+class Sports
+{
+    public:
+    std::string getName()
+    {
+        return "all sports";
+    }
+    void getTeamMembers()
+    {
+        std::cout<<"Each team has n player in "+ getName()<<std::endl;
+    }
+};
+class Cricket:public Sports
+{
+    public:
+    std::string getName()
+    {
+        return " And all cricket fans love THALA";
+    }
+    void getTeamMembers()
+    {
+        std::cout<<"Cricket has a playing team of 11 players" +getName()<<std::endl;
+    }
+};
+    
+int main()
+{
+    Cricket Thala;
+    Thala.getTeamMembers();
+    return 0;
+}
