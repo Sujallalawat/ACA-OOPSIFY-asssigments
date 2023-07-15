@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-    int t; //No. of test cases
-    cin >> t;
+    int t=100; //No. of test cases
+    
     while(t--){
         string str; //Defines string variable to be taken as input
         cin>>str; //Takes input string
